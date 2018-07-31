@@ -39,7 +39,13 @@ sudo mv ack /usr/local/bin/
 sudo chmod +x /usr/local/bin/ack
 ```
 
+## file manager - tree
 
+![Tree](https://github.com/borisf/remote-terminal/blob/master/img/tree.png)
+
+As part of my desktop flow I use a lot a dual pane file manager ([Norton Commander](https://en.wikipedia.org/wiki/Norton_Commander) derivative). I spend hours looking for somehitng similar (and more advanced than ls command) for terminal, but was never happy. All programs either had a non trivial builds, not appealing looks, 100% CPU usage and more. I ended up using [tree](https://github.com/nodakai/tree-command).
+
+With tree(listing) and tte(editor) it is possible to do everything.    
 
 
 
