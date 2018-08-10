@@ -27,7 +27,7 @@ scp ~/Desktop/lf borisfarber@borisfarber.something-remote.com:/home/Development
 ```
 
 ## text editor - tte
-Ability to modify files in the most important once connected to terminal and making basic bash commands. I was looking for the an editor to be small, fast, extensible (open source), easy to pick up (as my main IDE is AndroidStudio/IntelliJ) and well documented. I found [tte](https://github.com/GrenderG/tte) and never looked back. It is just one C file!
+Ability to modify files in the most important once connected to terminal and making basic bash commands. I was looking for an editor to be small, fast, extensible (open source), easy to pick up (as my main IDE is AndroidStudio/IntelliJ) and well documented. I found [tte](https://github.com/GrenderG/tte) and never looked back. It is just one C file!
 
 
 ## code search - ack
