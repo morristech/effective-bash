@@ -1,4 +1,4 @@
-# shell-know-how
+# bash-know-how
 
 ![Remote Machine](https://github.com/borisf/remote-terminal/blob/master/img/header.png)
 
