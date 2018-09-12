@@ -1,4 +1,4 @@
-# bash-know-how
+# terminal-in-action
 
 ![Remote Machine](https://github.com/borisf/remote-terminal/blob/master/img/header.png)
 
