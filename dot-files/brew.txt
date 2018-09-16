@@ -1,6 +1,5 @@
-git
 bash
 bat
-nnn
-the_silver_searcher
+git
 hh
+the_silver_searcher
