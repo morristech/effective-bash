@@ -1,10 +1,6 @@
+git
 bash
 bat
-cmake
-glib
-libssh2
 nnn
-node
-python
-s-lang
 the_silver_searcher
+hh
