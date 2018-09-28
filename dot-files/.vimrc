@@ -102,3 +102,11 @@ autocmd FileType scheme       setlocal sw=2 sts=2 et
 autocmd FileType sql          setlocal et
 autocmd FileType text         setlocal sw=2 sts=2 et tw=79
 augroup END
+
+" Java
+set sm
+set ai
+syntax on
+let java_highlight_all=1
+let java_highlight_functions="style"
+let java_allow_cpp_keywords=1
