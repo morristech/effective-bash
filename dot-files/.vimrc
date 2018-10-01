@@ -79,8 +79,6 @@ let java_allow_cpp_keywords=1
 so ~/.vim/plugins.vim
 
 " Plugin config
-" 'o' toggles NERDTree for working with the filesystem.
-map <C-o> :NERDTreeToggle<CR>
 
 "ctrip - file opening
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -88,3 +86,5 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 " "T" toggles the taglist for ctags.
 map T :TlistToggle<CR>
 
+" FZF
+set runtimepath^=/usr/local/opt/fzf
