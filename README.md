@@ -2,10 +2,43 @@
 
 ![Remote Machine](https://github.com/borisf/effective-bash/blob/master/img/header.png)
 
-As customer facing engineers, many times we find ourselves working on various remote machines (without the usual GUIs) to troubleshoot client issues, setup and demo our products and manage dedicated servers such as continuous integration and production access. The following list is makes me feel at home with every remote machine. My usual set is a Mac laptop connected to a remote Linux machine. Once I started working and crystallizing thoughts for this guide, I became more effective with terminal on my own local machine :). In general I try to work and test locally as much as possible.
+As customer facing engineers, many times we work with various remote machines (without the usual GUIs) to troubleshoot client issues, setup and demo our products and manage dedicated servers such as continuous integration(CI) and production access. The following list is makes me feel at home on every remote machine.
+
+My bash flow, is search (bunch of tools) ==> fix/edit with vi ==> commit (git). 
 
 
-## login and terminal - ssh
+# Search
+
+| Tool  | How to use |
+| ------------- | ------------- |
+| [hh](https://github.com/dvorka/hstr)  | Bash history suggest  |
+| [ag](https://github.com/ggreer/the_silver_searcher)  | String search in folders  |
+| [peco](https://github.com/peco/peco)  | Incremental String search in folders ```$ find . -name '*.java' -exec nl -s ': {}: '  {} \; | peco```|
+
+I use peco with find all the time.
+
+
+# Edit - vi
+There are more than enough table with vi's shortcuts, so I will skip it.
+Will list my custom configs/plugins:
+
+* Java
+
+* Kotlin
+
+* CntlP
+
+# Commit - git
+
+## Merge
+
+## Side by side diff
+
+
+# Misc.
+
+
+## login - ssh
 
 ### config
 Edit (or create) `~/.ssh/config` on the *local* machine and create the following entry:
@@ -68,23 +101,7 @@ scp ~/Desktop/lf borisfarber@borisfarber.something-remote.com:/home/Development
 ```
 
 ## text editor - tte
-Ability to modify files in the most important once connected to terminal and making basic bash commands. I was looking for an editor to be small, fast, extensible (open source), easy to pick up (as my main IDE is AndroidStudio/IntelliJ) and well documented. I found [tte](https://github.com/GrenderG/tte) and never looked back. It is just one C file!
+Ability to modify files in the most important once connected to terminal and making basic bash commands. If youa re looking for an editor to be small, fast, extensible (open source), easy to pick up  I recommend [tte](https://github.com/GrenderG/tte).
 
-
-## code search - ack
-The next step after code (file) editing is code (text search). I checked grep, but then found [ack](https://beyondgrep.com/install/), which is way more appealing. 
-
-```
-curl https://beyondgrep.com/ack-2.24-single-file > ./ack
-sudo mv ack /usr/local/bin/
-sudo chmod +x /usr/local/bin/ack
-```
-
-## file manager - tree
-
-![Tree](https://github.com/borisf/remote-terminal/blob/master/img/tree.png)
-
-As part of my desktop flow I use a lot a dual pane file manager ([Norton Commander](https://en.wikipedia.org/wiki/Norton_Commander) derivative). I spend hours looking for something similar (and more advanced than ls command) for terminal, but was never happy. All programs either had a non trivial builds, not appealing looks, 100% CPU usage and more. I ended up using [tree](https://github.com/nodakai/tree-command).
-
-Example of the second level tree
-``` tree -L 2 ```
+## prompt - powerline
+Will fill out ...
