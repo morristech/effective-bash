@@ -4,7 +4,9 @@
 
 As customer facing engineers, many times we work with various remote machines (without the usual GUIs) to troubleshoot client issues, setup and demo our products and manage dedicated servers such as continuous integration(CI) and production access. The following list is makes me feel at home on every remote machine.
 
-My bash flow, is search (bunch of tools) ==> fix/edit with vi ==> commit (git). 
+As rule of thumb I try to minimize and be mindfull about my configs to make sure they work with every [posix](https://en.wikipedia.org/wiki/POSIX) compliant system.
+
+My bash flow, is **search** (with bunch of tools) ==> **fix/edit** (with vi) ==> **commit** (with git). 
 
 
 # Search
@@ -13,30 +15,30 @@ My bash flow, is search (bunch of tools) ==> fix/edit with vi ==> commit (git).
 | ------------- | ------------- |
 | [hh](https://github.com/dvorka/hstr)  | Bash history suggest  |
 | [ag](https://github.com/ggreer/the_silver_searcher)  | String search in folders  |
-| [peco](https://github.com/peco/peco)  | Incremental String search in folders ```$ find . -name '*.java' -exec nl -s ': {}: '  {} \; | peco```|
+| [peco](https://github.com/peco/peco)  | Incremental String search in folders ```$ find . -name '*.java' -exec nl -s ': {}: '  {} \; | peco ``` |
 
-I use peco with find all the time.
+I keep 2 windows, one with the editor and another with peco for incremental search.
 
 
 # Edit - vi
-There are more than enough table with vi's shortcuts, so I will skip it.
-Will list my custom configs/plugins:
+There are more than enough table with vi's shortcuts, so I will skip it. I installed and happy with these 2 plugins:
 
-* Java
+* [Kotlin](https://github.com/udalov/kotlin-vim) - kotlin syntax coloring.
 
-* Kotlin
+* [CntlP](https://github.com/ctrlpvim/ctrlp.vim) - fuzzy files opener.
 
-* CntlP
+Here is my [.vimrc](https://github.com/borisf/effective-bash/blob/master/dot-files/.vimrc).
 
 # Commit - git
 
-## Merge
+* Merge
 
-## Side by side diff
+* Side by side diff
+
+* Lazygit
 
 
 # Misc.
-
 
 ## login - ssh
 
@@ -103,5 +105,29 @@ scp ~/Desktop/lf borisfarber@borisfarber.something-remote.com:/home/Development
 ## text editor - tte
 Ability to modify files in the most important once connected to terminal and making basic bash commands. If youa re looking for an editor to be small, fast, extensible (open source), easy to pick up  I recommend [tte](https://github.com/GrenderG/tte).
 
-## prompt - powerline
-Will fill out ...
+## prompt - powerline - go
+For the shell prompt I use [powerline-go](https://github.com/justjanne/powerline-go) that showes not only nice look, but also git status.
+
+
+Steps
+
+1. Install Go 
+2. [Install](https://medium.freecodecamp.org/jazz-up-your-bash-terminal-a-step-by-step-guide-with-pictures-80267554cb2) custom fonts on osx for iterm2
+3. Install the powerline-go itself
+```
+// download and install
+$ go get -u github.com/justjanne/powerline-go
+$ go install github.com/justjanne/powerline-go
+```
+4. Update bash profile
+
+.bash_profile update
+```
+function _update_ps1() {
+      PS1="$(~/.go/bin/powerline-go -error $?)"
+}
+
+if [ "$TERM" != "linux" ]; then
+    PROMPT_COMMAND=_update_ps1
+fi
+```
