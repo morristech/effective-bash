@@ -21,21 +21,23 @@ I keep 2 windows, one with the editor and another with peco for incremental sear
 
 
 # Edit - vi
-There are more than enough table with vi's shortcuts, so I will skip it. I installed and happy with these 2 plugins:
+This is the [book](https://upload.wikimedia.org/wikipedia/commons/d/d2/Learning_the_vi_Editor.pdf) I learnt vi from. The advantage of the book it is short and explains everything, one needs to be productive with vi. vi's out of the box experince is good to my needs, thus I ended up with these 2 easy install plugins:
 
-* [Kotlin](https://github.com/udalov/kotlin-vim) - kotlin syntax coloring.
+* [CtrlP](https://github.com/ctrlpvim/ctrlp.vim) - fuzzy files opener.
 
-* [CntlP](https://github.com/ctrlpvim/ctrlp.vim) - fuzzy files opener.
+* [Kotlin](https://github.com/udalov/kotlin-vim) - Kotlin syntax coloring
 
-Here is my [.vimrc](https://github.com/borisf/effective-bash/blob/master/dot-files/.vimrc).
+Here is my [.vimrc](https://github.com/borisf/effective-bash/blob/master/dot-files/.vimrc) file
 
 # Commit - git
 
-* Merge
 
-* Side by side diff
+* [Fac](https://github.com/mkchoi212/fac) - terminal UI for merge
 
-* Lazygit
+* [icdiff](https://www.jefftk.com/icdiff) - side by side diff
+
+
+* [lazygit](https://github.com/jesseduffield/lazygit) - terminal git ui
 
 
 # Misc.
@@ -103,7 +105,7 @@ scp ~/Desktop/lf borisfarber@borisfarber.something-remote.com:/home/Development
 ```
 
 ## text editor - tte
-Ability to modify files in the most important once connected to terminal and making basic bash commands. If youa re looking for an editor to be small, fast, extensible (open source), easy to pick up  I recommend [tte](https://github.com/GrenderG/tte).
+Ability to modify files in the most important once connected to terminal and making basic bash commands. If you are looking for an editor to be small, fast, extensible (open source), easy to pick up  I recommend [tte](https://github.com/GrenderG/tte).
 
 ## prompt - powerline - go
 For the shell prompt I use [powerline-go](https://github.com/justjanne/powerline-go) that showes not only nice look, but also git status.
@@ -111,7 +113,7 @@ For the shell prompt I use [powerline-go](https://github.com/justjanne/powerline
 
 Steps
 
-1. Install Go 
+1. Install [Go](https://golang.org/doc/install) 
 2. [Install](https://medium.freecodecamp.org/jazz-up-your-bash-terminal-a-step-by-step-guide-with-pictures-80267554cb2) custom fonts on osx for iterm2
 3. Install the powerline-go itself
 ```
