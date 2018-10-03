@@ -15,7 +15,7 @@ My bash flow, is **search** (with bunch of tools) ==> **fix/edit** (with vi) ==>
 | ------------- | ------------- |
 | [hh](https://github.com/dvorka/hstr)  | Bash history suggest  |
 | [ag](https://github.com/ggreer/the_silver_searcher)  | String search in folders  |
-| [peco](https://github.com/peco/peco)  | Incremental String search in folders ```$ find . -name '*.java' -exec nl -s ': {}: '  {} \; | peco ``` |
+| [fd](https://github.com/sharkdp/fd) with [peco](https://github.com/peco/peco)  | Incremental String search in folders ```fd -e java -x nl -s ': {/.}: ' {} | peco ``` |
 
 I keep 2 windows, one with the editor and another with peco for incremental search.
 
