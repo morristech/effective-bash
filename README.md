@@ -6,10 +6,10 @@ As customer facing engineers, many times we work with various remote machines (w
 
 As rule of thumb I try to minimize and be mindfull about my configs to make sure they work with every [posix](https://en.wikipedia.org/wiki/POSIX) compliant system.
 
-My bash flow, is **search** (with bunch of tools) ==> **fix/edit** (with vi) ==> **commit** (with git). 
+My flow, is **search** (with bunch of tools) ==> **fix/edit** (with vi) ==> **commit** (with git). 
 
 
-# Search
+# Search - hh/ag/fd/peco
 
 | Tool  | How to use |
 | ------------- | ------------- |
