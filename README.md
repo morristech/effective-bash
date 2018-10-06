@@ -13,7 +13,7 @@ Start by searching the relevant code/log data.
 | Tool  | How to use |
 | ------------- | ------------- |
 | [hh](https://github.com/dvorka/hstr)  | Bash history suggest  |
-| [fd](https://github.com/sharkdp/fd) with [peco](https://github.com/peco/peco)  | Incremental String search in folders ==> fd -e java -x nl -s ': {/.}: ' {} | peco  |
+| [fd](https://github.com/sharkdp/fd) with [peco](https://github.com/peco/peco)  | Incremental String search in folders ==> '''fd -e java -x nl -s ': {/.}: ' {} | peco '''  |
 | [fzf](https://github.com/junegunn/fzf) with [bat](https://github.com/sharkdp/bat)  | Incremental files search with content ==> fzf --preview 'bat --color always {}' |
 
 
