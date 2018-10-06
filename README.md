@@ -9,7 +9,7 @@ As rule of thumb I try to minimize and be mindfull about my configs to make sure
 My flow, is **search** (with bunch of tools) ==> **fix/edit** (with vi) ==> **commit** (with git). 
 
 
-# :mag_right: Search - hh/fd/peco/fzf/bat
+# :telescope: Search - hh/fd/peco/fzf/bat
 
 | Tool  | How to use |
 | ------------- | ------------- |
@@ -19,7 +19,7 @@ My flow, is **search** (with bunch of tools) ==> **fix/edit** (with vi) ==> **co
 
 
 
-# Edit - vi
+# :pencil2: Edit - vi
 This is the [book](https://upload.wikimedia.org/wikipedia/commons/d/d2/Learning_the_vi_Editor.pdf) I learnt vi from. The advantage of the book it is short and explains everything, one needs to be productive with vi. vi's out of the box experince is good to my needs, thus I ended up with these 2 easy install plugins:
 
 * [CtrlP](https://github.com/ctrlpvim/ctrlp.vim) - fuzzy files opener.
