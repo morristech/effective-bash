@@ -1,4 +1,3 @@
-autojump
 bash
 bat
 ctags
@@ -10,4 +9,3 @@ hh
 jesseduffield/lazygit/lazygit
 neovim
 peco
-the_silver_searcher
