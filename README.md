@@ -9,7 +9,7 @@ As rule of thumb I try to minimize and be mindfull about my configs to make sure
 My flow, is **search** (with bunch of tools) ==> **fix/edit** (with vi) ==> **commit** (with git). 
 
 
-# Search - hh/fd/peco/fzf/bat
+# :mag_right: Search - hh/fd/peco/fzf/bat
 
 | Tool  | How to use |
 | ------------- | ------------- |
