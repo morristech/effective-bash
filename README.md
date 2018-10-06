@@ -15,7 +15,7 @@ My flow, is **search** (with bunch of tools) ==> **fix/edit** (with vi) ==> **co
 | ------------- | ------------- |
 | [hh](https://github.com/dvorka/hstr)  | Bash history suggest  |
 | [fd](https://github.com/sharkdp/fd) with [peco](https://github.com/peco/peco)  | Incremental String search in folders ==> fd -e java -x nl -s ': {/.}: ' {} | peco  |
-| [fzf](https://github.com/junegunn/fzf) with [bat](https://github.com/sharkdp/bat)  | Incremental files browse with content ==> fzf --preview 'bat --color always {}' |
+| [fzf](https://github.com/junegunn/fzf) with [bat](https://github.com/sharkdp/bat)  | Incremental files search with content ==> fzf --preview 'bat --color always {}' |
 
 
 
@@ -28,7 +28,7 @@ This is the [book](https://upload.wikimedia.org/wikipedia/commons/d/d2/Learning_
 
 Here is my [.vimrc](https://github.com/borisf/effective-bash/blob/master/dot-files/.vimrc) file
 
-# Commit - git
+# :file_folder: Commit - git
 
 
 * [Fac](https://github.com/mkchoi212/fac) - terminal UI for merge
