@@ -10,7 +10,7 @@ As rule of thumb I try to minimize and be mindfull about my configs to make sure
 
 Start by searching the relevant code/log data.
 * [hh](https://github.com/dvorka/hstr) - Bash history suggest  
-* [fd](https://github.com/sharkdp/fd) with [peco](https://github.com/peco/peco) - incremental String search in folders ==> fd -e java -x nl -s ': {/.}: ' {} | peco
+* [fd](https://github.com/sharkdp/fd) with [fzf](https://github.com/junegunn/fzf) - incremental String search in folders ==> fd -e java -x nl -s ': {/.}: ' {} | fzf --reverse
 * [fzf](https://github.com/junegunn/fzf) with [bat](https://github.com/sharkdp/bat) - incremental files search with content ==> fzf --preview 'bat --color always {}'
 
 
