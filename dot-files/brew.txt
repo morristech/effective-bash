@@ -1,6 +1,7 @@
 bash
 bat
 ctags
+mkchoi212/fac/fac
 fd
 fzf
 git
