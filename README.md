@@ -9,12 +9,11 @@ As rule of thumb I try to minimize and be mindfull about my configs to make sure
 My flow, is **search** (with bunch of tools) ==> **fix/edit** (with vi) ==> **commit** (with git). 
 
 
-# Search - hh/ag/fd/peco
+# Search - hh/fd/peco
 
 | Tool  | How to use |
 | ------------- | ------------- |
 | [hh](https://github.com/dvorka/hstr)  | Bash history suggest  |
-| [ag](https://github.com/ggreer/the_silver_searcher)  | String search in folders  |
 | [fd](https://github.com/sharkdp/fd) with [peco](https://github.com/peco/peco)  | Incremental String search in folders ==> fd -e java -x nl -s ': {/.}: ' {} | peco  |
 
 I keep 2 windows, one with the editor and another with peco for incremental search.
