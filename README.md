@@ -9,14 +9,14 @@ As rule of thumb I try to minimize and be mindfull about my configs to make sure
 My flow, is **search** (with bunch of tools) ==> **fix/edit** (with vi) ==> **commit** (with git). 
 
 
-# Search - hh/fd/peco
+# Search - hh/fd/peco/fzf/bat
 
 | Tool  | How to use |
 | ------------- | ------------- |
 | [hh](https://github.com/dvorka/hstr)  | Bash history suggest  |
 | [fd](https://github.com/sharkdp/fd) with [peco](https://github.com/peco/peco)  | Incremental String search in folders ==> fd -e java -x nl -s ': {/.}: ' {} | peco  |
+| [fzf](https://github.com/junegunn/fzf) with [bat](https://github.com/sharkdp/bat)  | Incremental files browse with content ==> fzf --preview 'bat --color always {}' |
 
-I keep 2 windows, one with the editor and another with peco for incremental search.
 
 
 # Edit - vi
