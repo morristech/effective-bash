@@ -6,7 +6,7 @@ As customer facing engineers, many times we work with various remote machines (w
 
 As rule of thumb I try to minimize and be mindfull about my configs to make sure they work with every [posix](https://en.wikipedia.org/wiki/POSIX) compliant system.
 
-# :telescope: Search - hh/fd/peco/fzf/bat
+# :telescope: Search - hh/fd/fzf/bat
 
 Start by searching the relevant code/log data.
 * [hh](https://github.com/dvorka/hstr) - Bash history suggest  
