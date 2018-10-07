@@ -6,12 +6,12 @@ As customer facing engineers, many times we work with various remote machines (w
 
 As rule of thumb I try to minimize and be mindfull about my configs to make sure they work with every [posix](https://en.wikipedia.org/wiki/POSIX) compliant system.
 
-# :telescope: Search - hh/fd/fzf/bat
+# :telescope: Search - [fzf](https://github.com/junegunn/fzf)
 
 Start by searching the relevant code/log data.
-* [hh](https://github.com/dvorka/hstr) - Bash history suggest  
-* [fd](https://github.com/sharkdp/fd) with [fzf](https://github.com/junegunn/fzf) - incremental String search in folders ==> fd -e java -x nl -s ': {/.}: ' {} | fzf --reverse
-* [fzf](https://github.com/junegunn/fzf) with [bat](https://github.com/sharkdp/bat) - incremental files search with content ==> fzf --preview 'bat --color always {}'
+* hh (bahs alias) - Bash history suggest ==> ```alias hh='cat ~/.bash_history | sort -u | uniq -u | fzf --reverse | bash' ```  
+* [fd](https://github.com/sharkdp/fd) with [fzf](https://github.com/junegunn/fzf) - incremental String search in folders ==> ``` fd -e java -x nl -s ': {/.}: ' {} | fzf --reverse ```
+* [fzf](https://github.com/junegunn/fzf) with [bat](https://github.com/sharkdp/bat) - incremental files search with content ==> ``` fzf --preview 'bat --color always {}' ```
 
 
 
