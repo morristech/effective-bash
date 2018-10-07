@@ -6,7 +6,5 @@ fd
 fzf
 git
 go
-hh
 jesseduffield/lazygit/lazygit
 neovim
-peco
