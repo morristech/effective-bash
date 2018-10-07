@@ -1,5 +1,3 @@
-alias sbl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
-
 # osx locale
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
