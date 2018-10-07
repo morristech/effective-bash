@@ -87,4 +87,4 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 map T :TlistToggle<CR>
 
 " FZF
-set runtimepath^=/usr/local/opt/fzf
+set rtp+=/usr/local/opt/fzf
