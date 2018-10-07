@@ -1,5 +1,16 @@
 alias sbl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 
+# osx locale
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# Android
+export ANDROID_HOME='/Users/bfarber/DevTools/android-sdk-macosx'
+export PATH=$PATH:$ANDROID_HOME:/Users/bfarber/DevTools/android-sdk-macosx/build-tools
+
+# sublime
+alias sbl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+
 # brew
 export PATH="/usr/local/bin:$PATH"
 
@@ -25,3 +36,6 @@ fi
 
 # enhancd
 source ~/Development/enhancd/init.sh
+
+# history with fzf
+alias hh='cat ~/.bash_history | sort -u | uniq -u | fzf --reverse | bash'
