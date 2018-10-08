@@ -8,8 +8,7 @@ As rule of thumb I try to minimize and be mindfull about my configs to make sure
 
 # :telescope: Search - [fzf](https://github.com/junegunn/fzf)
 
-Start by searching the relevant code/log data.
-* hh (bash alias) - Bash history suggest ==> ```alias hh='cat ~/.bash_history | sort -u | uniq -u | fzf --reverse | bash' ```  
+Start by searching the relevant code/log data.  
 * [fd](https://github.com/sharkdp/fd) with [fzf](https://github.com/junegunn/fzf) - incremental String search in folders ==> ``` fd -e java -x nl -s ': {/.}: ' {} | fzf --reverse ```
 * [fzf](https://github.com/junegunn/fzf) with [bat](https://github.com/sharkdp/bat) - incremental files search with file content preview ==> ``` fzf --preview 'bat --color always {}' ```
 
