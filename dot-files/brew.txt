@@ -1,10 +1,12 @@
 bash
 bat
 ctags
+exa
 mkchoi212/fac/fac
 fd
 fzf
 git
 go
+hh
 jesseduffield/lazygit/lazygit
 neovim
