@@ -33,9 +33,6 @@ Fix is ready, time to commit.
 
 * [Fac](https://github.com/mkchoi212/fac) - terminal UI for merge
 
-* [icdiff](https://www.jefftk.com/icdiff) - side by side diff
-
-
 * [lazygit](https://github.com/jesseduffield/lazygit) - terminal git ui
 
 
