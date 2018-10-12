@@ -10,6 +10,5 @@ go
 hh
 jesseduffield/lazygit/lazygit
 neovim
-ripgrep
 sbdchd/skim/skim
 the_silver_searcher
