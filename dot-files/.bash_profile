@@ -36,7 +36,8 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # Source-s activations
 #-------------------------------------------------------------
 # enhancd
-source ~/Development/enhancd/init.sh
+
+source ~/.bash/enhancd/init.sh
 
 #-------------------------------------------------------------
 # Configs
