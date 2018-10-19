@@ -1,0 +1,36 @@
+[user]
+	name = Boris Farber
+	email = boris.farber@gmail.com
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[core]
+	excludesfile = /Users/bfarber/.gitignore_global
+	editor = sbl
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[url "persistent-https://devrel-review.git.corp.google.com"]
+	insteadOf = https://devrel-review.git.corp.google.com
+[google]
+	lastUpdateCheck = 20150922000000
+[color]
+	ui = auto
+[commit]
+	template = /Users/bfarber/.stCommitMsg
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+
+[merge]
+	tool = bcomp
+[mergetool "bcomp"]
+	trustExitCode = true
