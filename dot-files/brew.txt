@@ -8,6 +8,7 @@ fzf
 git
 go
 hh
+icdiff
 jesseduffield/lazygit/lazygit
 neovim
 sbdchd/skim/skim
