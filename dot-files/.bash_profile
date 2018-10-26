@@ -69,7 +69,6 @@ export PROMPT_COMMAND="history -a; history -n; ${PROMPT_COMMAND}"   # mem/file s
 if [[ $- =~ .*i.* ]]; then bind '"\C-r": "\C-a hh -- \C-j"'; fi
 # if this is interactive shell, then bind 'kill last command' to Ctrl-x k
 if [[ $- =~ .*i.* ]]; then bind '"\C-xk": "\C-a hh -k \C-j"'; fi
-
 #-------------------------------------------------------------
 # Aliases
 #-------------------------------------------------------------
@@ -83,7 +82,11 @@ alias sbl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 
 # incremental string search in files
 function inc() {
-    sk --ansi -i -c 'ag --color "{}"' --preview "preview.sh {}"
+  sk --ansi -i -c 'ag --color "{}"' --preview "preview.sh {}"
 }
 
+# incremental string search in one huge file
+function ss() {
+  nl $1 | fzy --lines=100
+}
 

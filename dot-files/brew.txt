@@ -5,6 +5,7 @@ exa
 mkchoi212/fac/fac
 fd
 fzf
+fzy
 git
 go
 hh
