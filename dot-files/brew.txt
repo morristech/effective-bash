@@ -1,6 +1,5 @@
 bash
 bat
-ctags
 exa
 mkchoi212/fac/fac
 fd
