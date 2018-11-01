@@ -88,7 +88,3 @@ nnoremap <C-g> :FuzzyGrep<CR>
 
 " FZF
 set rtp+=/usr/local/opt/fzf
-
-" Ag
-set runtimepath^=~/.vim/bundle/ag
-
