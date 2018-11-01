@@ -75,25 +75,20 @@ let java_highlight_all=1
 let java_highlight_functions="style"
 let java_allow_cpp_keywords=1
 
-" Vundle plugins
-so ~/.vim/plugins.vim
-
-" Plugin config
-
-"ctrip - file opening
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-
-" "T" toggles the taglist for ctags.
-map T :TlistToggle<CR>
-
-" FZF
-set rtp+=/usr/local/opt/fzf
-
 " color scheme for diff
 highlight DiffAdd    cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
 highlight DiffDelete cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
 highlight DiffChange cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
 highlight DiffText   cterm=bold ctermfg=10 ctermbg=88 gui=none guifg=bg guibg=Red
 
-" autosave
-autocmd TextChanged,TextChangedI <buffer> silent write
+" FZY - NeoVim
+set runtimepath^=~/.vim/bundle/neovim-fuzzy
+nnoremap <C-p> :FuzzyOpen<CR>
+nnoremap <C-g> :FuzzyGrep<CR>
+
+" FZF
+set rtp+=/usr/local/opt/fzf
+
+" Ag
+set runtimepath^=~/.vim/bundle/ag
+
