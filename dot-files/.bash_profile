@@ -90,3 +90,7 @@ function ss() {
   nl $1 | fzy --lines=100
 }
 
+function sss() {
+   ls -R | fzy --lines=100
+}
+
