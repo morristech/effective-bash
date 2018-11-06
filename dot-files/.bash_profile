@@ -90,8 +90,7 @@ function ss() {
   nl $1 | fzy --lines=100
 }
 
-# incremental filename search
 function sss() {
-   ls -R | fzy --lines=100
+   ls -lR | fzy --lines=100
 }
 
