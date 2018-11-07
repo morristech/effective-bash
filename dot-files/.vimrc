@@ -86,5 +86,5 @@ set runtimepath^=~/.vim/bundle/neovim-fuzzy
 nnoremap <C-p> :FuzzyOpen<CR>
 nnoremap <C-g> :FuzzyGrep<CR>
 
-" FZF
+" FZF, command :FZF
 set rtp+=/usr/local/opt/fzf
