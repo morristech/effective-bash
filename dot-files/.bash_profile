@@ -76,6 +76,12 @@ if [[ $- =~ .*i.* ]]; then bind '"\C-xk": "\C-a hh -k \C-j"'; fi
 # sublime from command line
 alias sbl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 
+# ClassyShark from command line
+alias cs='java -jar ~/jars/ClassyShark.jar'
+
+# InstaSearch from command line
+alias is='java -jar ~/jars/InstaSearch.jar'
+
 #-------------------------------------------------------------
 # Functions
 #-------------------------------------------------------------
