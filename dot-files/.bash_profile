@@ -85,18 +85,3 @@ alias is='java -jar ~/jars/InstaSearch.jar'
 #-------------------------------------------------------------
 # Functions
 #-------------------------------------------------------------
-
-# incremental string search in files
-function inc() {
-  sk --ansi -i -c 'ag --color "{}"' --preview "preview.sh {}"
-}
-
-# incremental string search in one huge file
-function ss() {
-  nl $1 | fzy --lines=100
-}
-
-function sss() {
-   ls -lR | fzy --lines=100
-}
-
