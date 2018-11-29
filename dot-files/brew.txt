@@ -1,6 +1,5 @@
 bash
 mkchoi212/fac/fac
-fd
 fzf
 fzy
 git
@@ -9,5 +8,4 @@ hh
 icdiff
 jesseduffield/lazygit/lazygit
 neovim
-sbdchd/skim/skim
 the_silver_searcher
