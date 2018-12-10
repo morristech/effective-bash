@@ -1,0 +1,14 @@
+// update all
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+
+// packages
+go
+fzy
+hh
+jesseduffield/lazygit/lazygit
+neovim
+the_silver_searcher
+? fzf
+
