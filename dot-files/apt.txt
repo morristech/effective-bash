@@ -4,6 +4,7 @@ sudo apt-get upgrade
 sudo apt-get dist-upgrade
 
 // packages
+java
 go
 fzy
 hh
