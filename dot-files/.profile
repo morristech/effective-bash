@@ -54,15 +54,6 @@ source ~/.bash/enhancd/init.sh
 # Configs
 #-------------------------------------------------------------
 
-# Powerline
-function _update_ps1() {
-   PS1="$(~/go/bin/powerline-go -error $?)"
-}
-
-if [ "$TERM" != "linux" ]; then
-    PROMPT_COMMAND=_update_ps1
-fi
-
 # vi bindings
 set -o vi
 
