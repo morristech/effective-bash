@@ -10,4 +10,4 @@ fzy
 hh
 jesseduffield/lazygit/lazygit
 neovim
-the_silver_searcher
+silversearcher-ag
