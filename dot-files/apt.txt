@@ -4,10 +4,13 @@ sudo apt-get upgrade
 sudo apt-get dist-upgrade
 
 // packages
+
+sudo apt-get upgrade
+
 java
 go
 fzy
 hstr
-jesseduffield/lazygit/lazygit
+lazygit
 neovim
 silversearcher-ag
