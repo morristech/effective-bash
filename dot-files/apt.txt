@@ -7,7 +7,7 @@ sudo apt-get dist-upgrade
 java
 go
 fzy
-hh
+hstr
 jesseduffield/lazygit/lazygit
 neovim
 silversearcher-ag
