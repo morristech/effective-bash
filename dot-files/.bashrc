@@ -55,6 +55,14 @@ writecmd (){ perl -e 'ioctl STDOUT, 0x5412, $_ for split //, do{ chomp($_ = <>);
 fhe() {
   ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed -re 's/^\s*[0-9]+\s*//' | writecmd
 }
+# powerline
 
+export GOPATH=$HOME/go
 
+function _update_ps1() {
+    PS1="$($GOPATH/bin/powerline-go -error $?)"
+}
 
+if [ "$TERM" != "linux" ] && [ -f "$GOPATH/bin/powerline-go" ]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
