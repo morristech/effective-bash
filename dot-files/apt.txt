@@ -17,3 +17,4 @@ hstr
 lazygit -- workaround install with go get
 neovim
 silversearcher-ag
+mc
