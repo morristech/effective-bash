@@ -40,6 +40,9 @@ alias cs='java -jar ~/jars/ClassyShark.jar'
 # mc
 alias mc='EDITOR=sublime mc'
 
+# mc dark scheme
+export MC_SKIN=/etc/mc/solarized.ini
+
 # FZF
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
