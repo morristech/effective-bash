@@ -70,6 +70,9 @@ set -o vi
 # Midnight Commander color scheme
 export MC_SKIN=$HOME/.mc/solarized.ini
 
+# Midnight Commander editor (nvim)
+alias mc='EDITOR=nvim mc'
+
 #-------------------------------------------------------------
 # Aliases
 #-------------------------------------------------------------
