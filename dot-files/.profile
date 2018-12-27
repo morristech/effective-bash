@@ -38,11 +38,11 @@ fi
 # Path exports
 #-------------------------------------------------------------
 
-# brew
-PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-
 # .bash folder
 export PATH="~/.bash:$PATH"
+
+# git extra status
+export PATH=$PATH:$HOME/git-extra-status/bin
 
 #-------------------------------------------------------------
 # Source-s activations
