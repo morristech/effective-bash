@@ -80,4 +80,6 @@ alias mc='EDITOR=nvim mc'
 # InstaSearch from command line
 alias is='java -jar ~/jars/InstaSearch.jar'
 
+# WSL root
+alias w='cd /mnt/c'
 
