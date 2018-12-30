@@ -1,0 +1,62 @@
+#-------------------------------------------------------------
+# BASH PROFILE
+#-------------------------------------------------------------
+
+#-------------------------------------------------------------
+# Path exports
+#-------------------------------------------------------------
+
+# .bash folder
+export PATH="~/.bash:$PATH"
+
+# go
+export PATH="~/go/bin:$PATH"
+
+#-------------------------------------------------------------
+# Source-s activations
+#-------------------------------------------------------------
+# enhancd
+
+source ~/.bash/enhancd/init.sh
+
+#-------------------------------------------------------------
+# Configs
+#-------------------------------------------------------------
+
+# vi bindings
+set -o vi
+
+#-------------------------------------------------------------
+# Aliases
+#-------------------------------------------------------------
+
+# InstaSearch from command line
+alias is='java -jar ~/jars/InstaSearch.jar'
+
+# ClassyShark from command line
+alias cs='java -jar ~/jars/ClassyShark.jar'
+
+# powerline
+
+export GOPATH=$HOME/go
+
+function _update_ps1() {
+    PS1="$($GOPATH/bin/powerline-go -error $?)"
+}
+
+if [ "$TERM" != "linux" ]; then
+    PROMPT_COMMAND=_update_ps1
+fi
+
+# ls colors - enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
